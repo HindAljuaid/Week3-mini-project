@@ -18,7 +18,7 @@ def load_data():
 
     ds = load_wine(as_frame=True)
     X, y = ds.data, ds.target
-    return train_test_split(X, y, test_size=0.2, random_state=42)
+    return train_test_split(X, y, test_size=0.3, random_state=42)
 
 def main(use_mlflow=True):
     X_train, X_test, y_train, y_test = load_data()
